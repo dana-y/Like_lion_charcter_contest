@@ -6,9 +6,9 @@
     position: relative;
     width: 300px;
     height: 350px;
-    background-image: url(/빡빢이.png);
+    background-image: url(/메이플배경.png);
     background-repeat: no-repeat;
-    background-size: 140%;
+    background-size: cover;
     background-position-x: -60px;
     overflow: hidden;
 }
@@ -18,7 +18,7 @@
     position: absolute;
     top: 30px;
     left: 35px;
-    background-color: #98989A;
+    background-color: #A2A39D;
     width: 220px;
     height: 200px;
     border: 6px solid black;
@@ -104,8 +104,6 @@
     height: 65px;
     border-radius: 20% 50% 40% 40%;
 }
-
-/* 눈동자 디자인 */
 .eye_apple_black {
     position: absolute;
     background-color: black;
@@ -226,7 +224,27 @@
     height: 10px;
     border-radius: 3px;
 }    
-
+.glasses {
+    top: 190px;
+    position: absolute;
+    width: 40px;
+    height: 15px;
+    border: 3px solid brown;
+    border-radius: 5px;
+}
+.glasses.left{
+    left: 65px;
+}
+.glasses.right{
+    left: 135px;
+}
+.glasses-line {
+    position: absolute;
+    top: 200px;
+    left: 110px;
+    width: 25px;
+    border-top: 3px solid brown;
+}
 /* 몸 디자인 */
 .body {
     position: absolute;
@@ -249,6 +267,7 @@
     border-radius: 50% 80% 0 80%;
     border: 6px solid black;
     transform: rotate(10deg);
+    overflow: hidden;
 }
 .neck {
     position: absolute;
@@ -261,12 +280,39 @@
     border-radius: 50%;
     transform: rotate(50deg);
 }
-
+.macbook-front {
+    position: absolute;
+    left: 50px;
+    top: -23px;
+    width: 130px;
+    height: 90px;
+    background-image: url(/맥북.png);
+    background-position-x: -16px;
+    background-position-y: -35px;
+    background-size: 130%;
+    transform: rotate(-30deg);
+    border: 6px solid black;
+    border-radius: 10px;
+}
+.macbook-back {
+    position: absolute;
+    left: 160px;
+    top: 260px;
+    width: 130px;
+    height: 90px;
+    background-image: url(/맥북.png);
+    background-position-x: -16px;
+    background-position-y: -35px;
+    background-size: 130%;
+    transform: rotate(-20deg);
+    border: 6px solid black;
+    border-radius: 10px;
+}
 /* 아이디박스 디자인 */
 .id {
     position: absolute;
     top: 310px;
-    left: 60px;
+    left: 45px;
     background-color: rgba( 0, 0, 0, 0.7 );
     font-size: 25px;
     color: white;
