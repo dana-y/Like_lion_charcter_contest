@@ -1,21 +1,27 @@
 /* 초기설정 */
+@font-face {
+    font-family: 'Maplestory';
+    src: url('/MaplestoryFont_TTF/Maplestory\ Light.ttf') format('ttf');
+}
 :root {
     --sec: #FDEDDE;
 }
+h2, p {
+    margin: 0;
+    padding: 0;
+}
 
 /* 레이아웃 밑작업 */
-
 body {
-    background-image: url(/background_img.png);
+    /* background-color: orange; */
+    background-image: url(/contents/background_img.png);
     background-repeat: no-repeat;
-    background-position: 50%;
     background-size: cover;
 }
 .wrapper {
     width: 1000px;
-    margin-top: 100px;
-    margin-left: 100px;
-    margin: 0 auto;
+    margin-top: 50px;
+    margin-left: 50px;
 }
 .profile {
     display: flex;
@@ -279,7 +285,7 @@ body {
     position: absolute;
     top: 260px;
     left: 95px;
-    background-color: lightblue;
+    background-color: orange;
     width: 100px;
     height: 210px;
     border-radius: 50% 80% 0 80%;
@@ -304,7 +310,7 @@ body {
     top: -23px;
     width: 130px;
     height: 90px;
-    background-image: url(/맥북.png);
+    background-image: url(/contents/맥북.png);
     background-position-x: -16px;
     background-position-y: -35px;
     background-size: 130%;
@@ -318,7 +324,7 @@ body {
     top: 260px;
     width: 130px;
     height: 90px;
-    background-image: url(/맥북.png);
+    background-image: url(/contents/맥북.png);
     background-position-x: -16px;
     background-position-y: -35px;
     background-size: 130%;
@@ -331,22 +337,23 @@ body {
     position: absolute;
     top: 310px;
     left: 45px;
+    width: 210px;
     background-color: rgba( 0, 0, 0, 0.7 );
     font-size: 30px;
     color: white;
-    width: 210px;
     text-align: center;
 }
+
 /* 말풍선 디자인 */
 .text-bubble {
     position: relative;
     float: right;
     margin-top: 50px;
-    margin-left: 20px;
-    width: 200px;
+    margin-left: 10px;
+    width: 230px;
     height: 70px;
     padding: 10px;
-    font-size: 1.2em;
+    font-size: 1.4em;
     text-align: center;
     border: 6px solid black;
     border-radius: 20px;
@@ -365,14 +372,24 @@ body {
     width: 20px;
     height: 25px;
 }
+
 /* 설명 디자인 */
 .parting-words {
+    font-family: 'Maplestory', sans-serif;
     display: flex;
     flex-direction: column;
-    width: 600px;
-    font-size: 1.2em;
+    width: 530px;
     color: #FEFCF9;
     border-radius: 10px;
-    padding: 30px;
+    padding: 20px;
     background-color: rgba(0, 0, 0, 0.8);
+}
+.parting-words h2{
+    font-weight: 400;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+.parting-words p {
+    font-size: 1em;
+
 }
