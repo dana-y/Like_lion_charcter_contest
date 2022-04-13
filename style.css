@@ -367,18 +367,9 @@ body {
     border: 5px solid black;
     border-top: none;
     border-radius: 0 0 120% 0;
-
 }
 
 /* text 및 audio 디자인 */
-.main-words {
-    font-family: 'Maplestory', sans-serif;
-    padding: 30px;
-    font-weight: 500;
-    font-size: 1.4em;
-    /* color:; */
-    margin-top: 50px;
-}
 .bgm {
     margin-top: 360px;
 }
