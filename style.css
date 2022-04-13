@@ -1,8 +1,4 @@
 /* 초기설정 */
-@font-face {
-    font-family: 'Maplestory';
-    src: url('./MaplestoryFont_TTF/Maplestory\ Light.ttf') format('ttf');
-}
 :root {
     --sec: #FDEDDE;
 }
