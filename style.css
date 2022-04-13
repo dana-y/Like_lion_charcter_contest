@@ -13,28 +13,28 @@ h2, p {
 
 /* 레이아웃 밑작업 */
 body {
-    /* background-color: orange; */
-    background-image: url(/contents/background_img.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: skyblue;
 }
 .wrapper {
-    width: 1000px;
-    margin-top: 50px;
-    margin-left: 50px;
-}
-.profile {
+    width: 900px;
+    margin: 50px auto;
+    background-image: url(/contents/background_img.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 10px;
     display: flex;
-    margin-bottom: 30px;
 }
-.box {
+.left-side {
     position: relative;
     width: 320px;
-    height: 350px;
-    float: left;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
+}
+.right-side {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* 얼굴 및 헤어 디자인 */
@@ -87,6 +87,7 @@ body {
     border-radius: 180% 80px 0% 130%;
     transform: rotate(-5deg);
 }
+
 /* 귀 디자인 */
 .ear {
     position: absolute;
@@ -269,6 +270,7 @@ body {
     width: 25px;
     border-top: 3px solid brown;
 }
+
 /* 몸 디자인 */
 .body {
     position: absolute;
@@ -332,6 +334,7 @@ body {
     border: 6px solid black;
     border-radius: 10px;
 }
+
 /* 아이디박스 디자인 */
 .id {
     position: absolute;
@@ -347,9 +350,7 @@ body {
 /* 말풍선 디자인 */
 .text-bubble {
     position: relative;
-    float: right;
     margin-top: 50px;
-    margin-left: 10px;
     width: 230px;
     height: 70px;
     padding: 10px;
@@ -358,38 +359,30 @@ body {
     border: 6px solid black;
     border-radius: 20px;
     background-color: #FEFCF9;
-    clear: both;
 }
 .text-bubble::before {
 	content: '';
     top: 90px;
     left: 40px;
+    width: 10px;
+    height: 20px;
 	position: absolute;
     background-color: #FEFCF9;
-    border: 6px solid black;
+    border: 5px solid black;
     border-top: none;
     border-radius: 0 0 120% 0;
-    width: 20px;
-    height: 25px;
+
 }
 
-/* 설명 디자인 */
-.parting-words {
+/* text 및 audio 디자인 */
+.main-words {
     font-family: 'Maplestory', sans-serif;
-    display: flex;
-    flex-direction: column;
-    width: 530px;
-    color: #FEFCF9;
-    border-radius: 10px;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-.parting-words h2{
-    font-weight: 400;
+    padding: 30px;
+    font-weight: 500;
     font-size: 1.4em;
-    margin-bottom: 10px;
+    /* color:; */
+    margin-top: 50px;
 }
-.parting-words p {
-    font-size: 1em;
-
+.bgm {
+    margin-top: 360px;
 }
